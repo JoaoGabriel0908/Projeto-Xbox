@@ -1,0 +1,258 @@
+section.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+    padding-top: 100px;
+    width: 100%;
+    margin: auto;
+    background-image: url(../imgs/luz-verde.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div.pedido h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+}
+div.pedido p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 48px;
+    color: var(--primary);
+    margin-bottom: 13px;
+    
+}
+div.imagem-xbox{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.imagem-xbox img{
+    width: 100%;
+}
+
+section.controle{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 300px;
+    gap: 150px;
+}
+.texto-controle{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 24px;
+    font-family: var(--fonte-principal);
+}
+.texto-controle span, p{
+    color: var(--white);
+}
+.texto-controle h1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    font-size: 64px;
+    line-height: 83.2px;
+}
+.texto-controle p{
+    line-height: 40px;
+    font-weight: 500, medium;
+    color: #C0C0C0;
+    width: 570px;
+}
+.imagem-controle img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-games{
+    margin: 300px auto 200px auto;
+    display: flex;
+    align-self: flex-start;
+    overflow: auto;
+    max-width: 1920px;
+    flex: 1;
+    white-space: nowrap;
+
+} 
+
+.game-1{
+    background-image: url(../imgs/4MxzDZKZwtEWyMWZghvwd7bQ\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.game-2{
+    background-image: url(../imgs/Mask\ Group\ \(1\).png);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.game-3{
+    background-image: url(../imgs/Mask\ Group\ \(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.game-4{
+    background-image: url(../imgs/Mask\ Group\ \(3\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.container-games .games {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 800px;
+
+}
+
+.container-games div img{
+    display: flex;
+    margin: auto;
+}
+
+.container-games .game-1 img{
+    width: 300px;
+    height: 61.67px;
+    margin-bottom: 64.33px;
+
+}
+.container-games .game-2 img{
+    width: 300px;
+    height: 83.71px;
+    margin-bottom: 64.29px;
+    background-size: auto 100%;
+}
+.container-games .game-3 img{
+    width: 200px;
+    height: 65.6px;
+    margin-bottom:  64.4px;
+    background-size: auto 100%;
+}
+.container-games .game-4 img{
+    width: 293.48px;
+    height: 49.8px;
+    margin-bottom:  76.77px;
+    background-size: auto 100%;
+}
+
+.container-perguntas{
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1228px;
+    margin: auto;
+    font-family: var(--fonte-principal);
+    font-size: 48px;
+    margin-bottom: 60px;
+    font-family: 600, bold;
+}
+.container-perguntas span{
+    color: var(--white);
+}
+.container-perguntas details{
+    border-bottom: 2px solid #2E2E2E;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 43px 0;
+    font-family: var(--fonte-principal);
+}
+.container-perguntas summary{
+    font-size: 24px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500,Medium ;
+}
+.container-perguntas img:target{
+    background-color: var(--primary);
+}
+
+summary{
+    list-style: none;
+}
+summary::-webkit-details-marker {
+    
+}
+.container-perguntas p{
+    font-size: 18px;
+    color: #C0C0C0;
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    padding-left: 20px;
+    font-weight: 500,Medium ;
+}
+
+@media (max-width:1310px) {
+    .container-games
+    .game-1,
+    .game-2,
+    .game-3,
+    .game-4{
+        min-width: 480px;
+    } 
+}
+
+@media (max-width:1024px) {
+    section.controle{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .container-perguntas{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .container-perguntas h1{
+        text-align: center;
+    }
+}
+@media (max-width:600px) {
+    .texto-controle p{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    }
+    .texto-controle p{
+        width: 100%;
+
+    }
+    .texto-controle h1{
+        width: 100%;
+
+    }
+    .container-perguntas h1{
+        width: 100%;
+    }
+}
+@media (max-width:400px) {
+    .texto-controle{
+        max-width: 300px;
+    }
+    .texto-controle h1{
+        max-width: 300px;
+        font-size: 3rem;
+    }
+    .container-perguntas h1
+    {
+        font-size: 3rem;
+    }
+}
